@@ -1,0 +1,16 @@
+2026-10-12 14:59:15,501 - integrated_qa_system - INFO - 127.0.0.1
+2026-10-12 17:15:51,112 - integrated_qa_system - ERROR - 数据库操作失败: 'subject_name'
+2026-10-12 17:17:47,454 - integrated_qa_system - ERROR - 数据库操作失败: 'subject_name'
+2026-10-12 17:20:45,376 - integrated_qa_system - ERROR - 数据库操作失败: (pymysql.err.OperationalError) (1049, "Unknown database 'integrated_qa_system'")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-10-12 17:21:33,110 - integrated_qa_system - ERROR - 数据库操作失败: (pymysql.err.ProgrammingError) (1146, "Table 'edu_rag.jpkb' doesn't exist")
+[SQL: INSERT INTO jpkb (subject_name, question, answer) VALUES (%(subject_name)s, %(question)s, %(answer)s)]
+[parameters: {'subject_name': 'Python学科', 'question': '用上下文管理器实现函数运行时间的计算?', 'answer': 'import time\nimport contextlib\n\n\n@contextlib.contextmanager\ndef timing():\n    start = time.time()\n    yield None\n    end = time.time()\n    pr ... (130 characters truncated) ...     else:\n        if number > 3:\n            return func(number - 1) + func(number - 2) + func(number - 3)\n\n\nwith timing():\n    print(func(30))'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-10-12 17:51:14,995 - integrated_qa_system - INFO - Redis连接成功
+2026-10-12 17:51:26,785 - integrated_qa_system - INFO - Redis连接成功
+2026-10-12 17:51:44,740 - integrated_qa_system - INFO - Redis连接成功
+2026-10-12 17:53:00,971 - integrated_qa_system - INFO - Redis连接成功
+2026-10-12 17:55:53,566 - integrated_qa_system - INFO - Redis连接成功
+2026-10-12 18:04:25,971 - integrated_qa_system - INFO - Redis连接成功
+2026-10-12 18:04:25,992 - integrated_qa_system - INFO - Redis存储数据成功: user:1
